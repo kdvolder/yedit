@@ -88,27 +88,27 @@
 										<echo message="dist.bucket=${dist.bucket}" />
 										<echo message="dist.path=${dist.path}" />
 
-<!-- 										<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}"> -->
+										<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
 
-<!-- 											<delete bucketName="${dist.bucket}"> -->
-<!-- 												<fileset dir="${dist.path}"> -->
-<!-- 													<include name="site.xml" /> -->
-<!-- 													<include name="content.jar" /> -->
-<!-- 													<include name="artifacts.jar" /> -->
-<!-- 													<include name="plugins/**" /> -->
-<!-- 													<include name="features/**" /> -->
-<!-- 												</fileset> -->
-<!-- 											</delete> -->
+											<delete bucketName="${dist.bucket}">
+												<fileset dir="${dist.path}">
+													<include name="site.xml" />
+													<include name="content.jar" />
+													<include name="artifacts.jar" />
+													<include name="plugins/**" />
+													<include name="features/**" />
+												</fileset>
+											</delete>
 
-<!-- 											<upload bucketName="${dist.bucket}" toDir="${dist.path}" -->
-<!-- 												publicRead="true"> -->
-<!-- 												<fileset dir="${site.target.dir}/repository"> -->
-<!-- 													<include name="**/*" /> -->
-<!-- 													<include name="**" /> -->
-<!-- 													<exclude name="*.zip" /> -->
-<!-- 												</fileset> -->
-<!-- 											</upload> -->
-<!-- 										</s3> -->
+											<upload bucketName="${dist.bucket}" toDir="${dist.path}"
+												publicRead="true">
+												<fileset dir="${site.target.dir}/repository">
+													<include name="**/*" />
+													<include name="**" />
+													<exclude name="*.zip" />
+												</fileset>
+											</upload>
+										</s3>
 									</target>
 								</configuration>
 								<goals>
