@@ -6,5 +6,6 @@
    <feature url="features/org.dadacoalition.yedit.feature_0.0.0.jar" id="org.dadacoalition.yedit.feature" version="0.0.0">
       <category name="YEdit"/>
    </feature>
+   <bundle id="org.yaml.snakeyaml" version="0.0.0"/>
    <category-def name="YEdit" label="YEdit"/>
 </site>
